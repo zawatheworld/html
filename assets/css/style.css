@@ -6,6 +6,7 @@
 body{
     font-family: ヒラギノ角ゴ;
     font-size: 16px;
+    color: #454545
 }
 
 .wrapper{
@@ -39,41 +40,44 @@ header{
 
 
 /* ナビゲーション */
-.nav{
+.global-nav{
     margin-top: 40px;
 }
 
-.nav-ul{
+.global-nav-list{
     display: flex;
     justify-content: space-between;
 }
 
-.nav-li{
+.global-nav-item{
     border-left: solid 2px #575757;
     width: 180px;
     height: 25px;
 }
 
-.nav-li:last-child{
+.global-nav-item:last-child{
     border-right: solid 2px #575757;
 }
 
-.nav-a{
+/* 「リストの１番目の中のaタグだけ」
+（aタグに書くと、
+「全リストの中のaタグの中の１番目」
+という意味になってしまう */
+.global-nav-item:first-child a{
+    color: #9aaf24;
+}
+
+.global-nav-link{
     text-decoration: none;
     color: #454545;
     font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
     display: block;
-    height: 25px;
     text-align: center;
     line-height: 25px;
 }
 
-/* なぜこれでリストの１個目にだけ色がつかないのか */
-.nav-a:first-child{
-    color: #9aaf24;
-}
-
-.nav-a:hover{
+.global-nav-link:hover{
     background-color: #fafafa;
     color: #9aaf24;
 }
@@ -86,3 +90,143 @@ header{
     background-color: #fafafa;
 }
 
+/* ニュースのタイトルをdivで囲わなくても、
+背景に画像を敷くことにすればOK */
+.contents-title{
+    background: url(../img/titlebar.png) no-repeat;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    padding-top: 12px;
+    margin-top: 68px;
+    text-align: center;
+}
+
+.news-list{
+    width: 710px;
+    padding: 40px 0 80px 0;
+    margin: 0 auto;
+}
+
+.news-item{
+    display: flex;
+}
+
+.news-item:last-child a{
+    line-height: 1.8;
+}
+
+.news-day{
+    display: block;
+    width: 130px;
+    font-size: 14px;
+    color: #fff;
+    background-color: #333;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    text-align: center;
+    line-height: 28px;
+    margin-bottom: 24px;
+}
+
+.news-link{
+    width: 580px;
+    color: #454545;
+    padding-left: 40px;
+}
+
+
+/* FEATURES */
+.feat{
+    margin-top: 124px;
+}
+
+.feat-box{
+    margin-top: 70px;
+    display: flex;
+    align-items: flex-start;
+}
+
+.feat-visual{
+    width: 360px;
+}
+
+.feat-text{
+    width: 660px;
+    margin-left: 56px;
+}
+
+.feat-title{
+    font-size:24px;
+    font-weight: 600;
+}
+
+.feat-description1{
+    margin-top: 42px;
+    line-height: 1.6;
+    padding-bottom: 25px;
+}
+
+.feat-description2{
+    line-height: 1.6;
+    padding-bottom: 25px;
+}
+
+
+/* SUBSCRIPTION */
+.sub{
+    margin-top: 124px;
+}
+
+.sub-title{
+    width: 718px;
+    padding-top: 49px;
+    margin: 0 auto;
+}
+
+.sub-contents{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 61px;
+}
+
+.sub-card{
+    border: solid 4px #c9e23f;
+}
+
+.sub-text{
+    text-align: center;
+}
+
+.sub-visual{
+    width: 336px;
+}
+
+.sub-cardtitle{
+    margin-top: 34px;
+    font-size: 22px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+
+.sub-price{
+    margin-top: 24px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 40px;
+}
+
+.price-unit{
+    font-size: 32px;
+    font-weight: 500;
+    padding: 12px;
+}
+
+.sub-description{
+    margin-top: 38px;
+    font-size: 14px;
+}
+
+.sub-btn{
+    margin-top: 23px;
+}
