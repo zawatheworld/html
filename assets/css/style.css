@@ -1,0 +1,88 @@
+/* 全体 */
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: ヒラギノ角ゴ;
+    font-size: 16px;
+}
+
+.wrapper{
+    width: 1080px;
+    margin: 0 auto;
+}
+
+
+/* ヘッダー */
+header{
+    padding-top: 36px;
+}
+
+.header-img{
+    width: 208px;
+}
+
+
+/* トップの画像 */
+.main-visual{
+    margin-top: 36px;
+    position: relative;
+}
+
+.copy{
+    position: absolute;
+    top: 52px;
+    right: 100px;
+    width: 242px;
+}
+
+
+/* ナビゲーション */
+.nav{
+    margin-top: 40px;
+}
+
+.nav-ul{
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-li{
+    border-left: solid 2px #575757;
+    width: 180px;
+    height: 25px;
+}
+
+.nav-li:last-child{
+    border-right: solid 2px #575757;
+}
+
+.nav-a{
+    text-decoration: none;
+    color: #454545;
+    font-family: 'Montserrat', sans-serif;
+    display: block;
+    height: 25px;
+    text-align: center;
+    line-height: 25px;
+}
+
+/* なぜこれでリストの１個目にだけ色がつかないのか */
+.nav-a:first-child{
+    color: #9aaf24;
+}
+
+.nav-a:hover{
+    background-color: #fafafa;
+    color: #9aaf24;
+}
+
+
+/* ニュース */
+.news{
+    margin-top: 56px;
+    border: solid 1px #eee;
+    background-color: #fafafa;
+}
+
