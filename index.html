@@ -24,6 +24,8 @@
             <h1>
                 <a href=""><img class="header-img" src="assets/img/logo.svg" alt="ロゴ"></a>
             </h1>
+            <!-- スマホ用ハンバーガーボタン -->
+            <a class="menu-trigger" href=""><img src="assets/img/menu.svg"></a>
         </header>
 
         <!-- トップの画像 -->
@@ -51,30 +53,36 @@
 
             <!-- ニュース -->
             <section class="news">
-                <h2 class="contents-title">NEWS</h2>
-                <ul class="news-list">
-                    <li class="news-item">
-                        <span class="news-day">2018.12.17</span>
-                        <a class="news-link" href="">TAKAOSANオリジナルハードシェルを限定発売いたしました。</a>
-                    </li>
-                    <li class="news-item">
-                        <span class="news-day">2018.11.09</span>
-                        <a class="news-link" href="">PFCフリー撥水剤プレゼントキャンペーン</a>
-                    </li>
-                    <li class="news-item">
-                        <span class="news-day">2018.06.30</span>
-                        <a class="news-link" href="">家族参加型 雪上運動会&山ガールコラボレーションツアーのご案内。</a>
-                    </li>
-                    <li class="news-item">
-                        <span class="news-day">2018.03.14</span>
-                        <a class="news-link" href="">TAKAOSANオンラインショップがオープンしました。オンラインクーポンを期間限定で配付中。お見逃なく！</a>
-                    </li>
-                </ul>
+                <div class="news-area">
+                    <div class="contents-title-box">
+                        <h2 class="contents-title">NEWS</h2>
+                    </div>
+                    <ul class="news-list">
+                        <li class="news-item">
+                            <span class="news-day">2018.12.17</span>
+                            <a class="news-link" href="">TAKAOSANオリジナルハードシェルを限定発売いたしました。</a>
+                        </li>
+                        <li class="news-item">
+                            <span class="news-day">2018.11.09</span>
+                            <a class="news-link" href="">PFCフリー撥水剤プレゼントキャンペーン実施中</a>
+                        </li>
+                        <li class="news-item">
+                            <span class="news-day">2018.06.30</span>
+                            <a class="news-link" href="">家族参加型 雪上運動会&山ガールコラボレーションツアーのご案内。</a>
+                        </li>
+                        <li class="news-item">
+                            <span class="news-day">2018.03.14</span>
+                            <a class="news-link" href="">TAKAOSANオンラインショップがオープンしました。 tオンラインクーポンを期間限定で配付中。お見逃なく！</a>
+                        </li>
+                    </ul>
+                </div>
             </section>
 
             <!-- FEATURES -->
             <section class="feat">
-                <h2 class="contents-title">FEATURES</h2>
+                <div class="contents-title-box">
+                    <h2 class="contents-title">FEATURES</h2>
+                </div>
                 <div class="feat-box">
                     <img class="feat-visual" src="assets/img/features-image.jpg" alt="後ろ姿">
                     <div class="feat-text">
@@ -87,93 +95,109 @@
 
             <!-- SUBSCRIPTION -->
             <section class="sub">
-                <h2 class="contents-title">SUBSCRIPTION</h2>
+                <div class="contents-title-box">
+                    <h2 class="contents-title">SUBSCRIPTION</h2>
+                </div>
                 <P class="sub-title">TAKAOSANオススメの商品を毎月お客様のもとにお送りする定額サービスを実施しております。初月無料なので、安心して始めることが出来ます。</P>
-                <div class="sub-contents">
-                    <article class="sub-card">
-                        <a class="sub-link">
+                <ul class="sub-contents">
+                    <li class="sub-card">
+                        <a href="" class="sub-link">
                             <div class="sub-text">
                                 <img class="sub-visual" src="assets/img/subscription-starter-image.jpg" alt="男の子">
                                 <h3 class="sub-cardtitle">Starter</h3>
                                 <p class="sub-price"><span class="price-unit">¥</span>2,400<span class="price-unit">/m</span></p>
                                 <p class="sub-description">気軽に始められるスターターパック</p>
-                                <div class="sub-btn"><a href="">詳しくはこちら</a></div>
+                                <div class="sub-btn">詳しくはこちら</div>
                             </div>
                         </a>
-                    </article>
-                    <article class="sub-card">
-                        <a class="sub-link">
+                    </li>
+                    <li class="sub-card">
+                        <a href="" class="sub-link">
                             <div class="sub-text">
                                 <img class="sub-visual" src="assets/img/subscription-standard-image.jpg" alt="女の人">
                                 <h3 class="sub-cardtitle">Standard</h3>
                                 <p class="sub-price"><span class="price-unit">¥</span>7,800<span class="price-unit">/m</span></p>
                                 <p class="sub-description">当店オススメのスタンダードパック</p>
-                                <div class="sub-btn"><a href="">詳しくはこちら</a></div>
+                                <div class="sub-btn">詳しくはこちら</div>
                             </div>
                         </a>
-                    </article>
-                    <article class="sub-card">
-                        <a class="sub-link">
+                    </li>
+                    <li class="sub-card">
+                        <a href="" class="sub-link">
                             <div class="sub-text">
                                 <img class="sub-visual" src="assets/img/subscription-master-image.jpg" alt="2人の女の人">
                                 <h3 class="sub-cardtitle">Master</h3>
                                 <p class="sub-price"><span class="price-unit">¥</span>16,400<span class="price-unit">/m</span></p>
                                 <p class="sub-description">ハイブランドを毎月お届けします</p>
-                                <div class="sub-btn"><a href="">詳しくはこちら</a></div>
+                                <div class="sub-btn">詳しくはこちら</div>
                             </div>
                         </a>
-                    </article>
-                </div>
+                    </li>
+                </ul>
             </section>
 
             <!-- ITEMS -->
             <section class="items">
-                <h2 class="contents-title">ITEMS</h2>
-                <ul class="items-ul">
-                    <li class="items-li">
-                        <a class="items-a" href=""><img class="items-img" src="" alt="女1"></a>
+                <div class="contents-title-box">
+                    <h2 class="contents-title">ITEMS</h2>
+                </div>
+                <ul class="items-list">
+                    <li class="items-visual">
+                        <a class="items-link" href=""><img class="items-photo" src="assets/img/items-image01.png" alt="女1"></a>
                     </li>
-                    <li class="items-li">
-                        <a class="items-a" href=""><img class="items-img" src="" alt="女2"></a>
+                    <li class="items-visual">
+                        <a class="items-link" href=""><img class="items-photo" src="assets/img/items-image02.png" alt="女2"></a>
                     </li>
-                    <li class="items-li">
-                        <a class="items-a" href=""><img class="items-img" src="" alt="男1"></a>
+                    <li class="items-visual">
+                        <a class="items-link" href=""><img class="items-photo" src="assets/img/items-image03.png" alt="男1"></a>
                     </li>
-                    <li class="items-li">
-                        <a class="items-a" href=""><img class="items-img" src="" alt="女3"></a>
+                    <li class="items-visual">
+                        <a class="items-link" href=""><img class="items-photo" src="assets/img/items-image04.png" alt="女3"></a>
                     </li>
-                    <li class="items-li">
-                        <a class="items-a" href=""><img class="items-img" src="" alt="女4"></a>
+                    <li class="items-visual">
+                        <a class="items-link" href=""><img class="items-photo" src="assets/img/items-image05.png" alt="女4"></a>
                     </li>
-                    <li class="items-li">
-                        <a class="items-a" href=""><img class="items-img" src="" alt="男2"></a>
+                    <li class="items-visual">
+                        <a class="items-link" href=""><img class="items-photo" src="assets/img/items-image06.png" alt="男2"></a>
                     </li>
-                    <li class="items-li">
-                        <a class="items-a" href=""><img class="items-img" src="" alt="女5"></a>
+                    <li class="items-visual">
+                        <a class="items-link" href=""><img class="items-photo" src="assets/img/items-image07.png" alt="女5"></a>
                     </li>
-                    <li class="items-li">
-                        <a class="items-a" href=""><img class="items-img" src="" alt="女6"></a>
+                    <li class="items-visual">
+                        <a class="items-link" href=""><img class="items-photo" src="assets/img/items-image08.png" alt="女6"></a>
                     </li>
-                    <li class="items-li">
-                        <a class="items-a" href=""><img class="items-img" src="" alt="男3"></a>
+                    <li class="items-visual">
+                        <a class="items-link" href=""><img class="items-photo" src="assets/img/items-image09.png" alt="男3"></a>
                     </li>
-                    <li class="items-li">
-                        <a class="items-a" href=""><img class="items-img" src="" alt="男4"></a>
+                    <li class="items-visual">
+                        <a class="items-link" href=""><img class="items-photo" src="assets/img/items-image10.png" alt="男4"></a>
                     </li>
-                    <li class="items-li">
-                        <a class="items-a" href=""><img class="items-img" src="" alt="男5"></a>
+                    <li class="items-visual">
+                        <a class="items-link" href=""><img class="items-photo" src="assets/img/items-image11.png" alt="男5"></a>
                     </li>
-                    <li class="items-li">
-                        <a class="items-a" href=""><img class="items-img" src="" alt="女7"></a>
+                    <li class="items-visual">
+                        <a class="items-link" href=""><img class="items-photo" src="assets/img/items-image12.png" alt="女7"></a>
                     </li>
                 </ul>
             </section>
 
             <!-- コピーライト -->
-            <small>COPYRIGHT TAKAOSAN ALL RIGHTS RESERVED.</small>
+            <div class="copyright">
+                <small>COPYRIGHT TAKAOSAN ALL RIGHTS RESERVED.</small>
+            </div>
 
         </main>
     </div>
+
+    <!-- ハンバーガーメニューを開いた画面 -->
+    <script>
+        $('.menu-trigger').on('click', function(){
+            $('.global-nav-list').slideToggle();
+            $('html, body').toggleClass('hidden');
+            return false;
+        });
+    </script>
+
 
 </body>
 <!-- ここまでラッパー -->

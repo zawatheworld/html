@@ -14,14 +14,54 @@ body{
     margin: 0 auto;
 }
 
+@media(max-width:768px){
+    .wrapper{
+        width: 100%;
+        /* padding: 0 5%; */
+    }
+}
+
 
 /* ヘッダー */
 header{
     padding-top: 36px;
 }
 
+.menu-trigger{
+    display: none;
+}
+
 .header-img{
     width: 208px;
+}
+
+@media(max-width:768px){
+    header {
+        width: 100%;
+        padding: 20px 16px;
+
+        display: flex;
+        justify-content: space-between;
+
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 2;
+
+        background-color: #fff;
+    }
+    h1{
+        /* display: inline; */
+    }
+    .header-img{
+        width: 187px;
+    }
+    .menu-trigger{
+        /* display: inline; */
+        /* text-align: right; */
+        display: block;
+        
+    }
 }
 
 
@@ -36,6 +76,21 @@ header{
     top: 52px;
     right: 100px;
     width: 242px;
+}
+
+@media(max-width:768px){
+    .main-visual{
+        margin: 100px 0 0;
+    }
+    .main-visual-img{
+        width: 100%;
+        padding: 0;
+    }
+    .copy{
+        top: 26px;
+        right: 15px;
+        width: 120px;
+    }
 }
 
 
@@ -75,11 +130,18 @@ header{
     display: block;
     text-align: center;
     line-height: 25px;
+    transition: all .3s ease-in;
 }
 
 .global-nav-link:hover{
     background-color: #fafafa;
     color: #9aaf24;
+}
+
+@media(max-width:768px){
+    .global-nav{
+        display: none;
+    }
 }
 
 
@@ -90,16 +152,23 @@ header{
     background-color: #fafafa;
 }
 
+.news-area{
+    margin-top: 62px;
+}
+
+.contents-title-box{
+    text-align: center;
+}
+
 /* ニュースのタイトルをdivで囲わなくても、
 背景に画像を敷くことにすればOK */
 .contents-title{
+    display: inline-block;
     background: url(../img/titlebar.png) no-repeat;
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
     font-size: 24px;
     padding-top: 12px;
-    margin-top: 68px;
-    text-align: center;
 }
 
 .news-list{
@@ -133,6 +202,29 @@ header{
     width: 580px;
     color: #454545;
     padding-left: 40px;
+}
+
+@media(max-width:768px){
+    .news{
+        margin: 56px 11px 0 11px;
+    }
+    .news-list{
+        width: 100%;
+        padding: 30px 25px 0 25px;
+        margin: 0 0 35px 0;
+    }
+    .news-item{
+        display: block;
+    }
+    .news-day{
+        margin: 0;
+    }
+    .news-link{
+        display: block;
+        width: 100%;
+        padding: 12px 0 20px 0 ;
+        line-height: 1.5;
+    }
 }
 
 
@@ -172,6 +264,40 @@ header{
     padding-bottom: 25px;
 }
 
+@media(max-width:768px){
+    .feat{
+        margin-top: 43px;
+    }
+    .feat-box{
+        margin-top: 44px;
+        display: block;
+    }
+    .feat-visual{
+        width: 100%;
+        padding: 0 28px;
+    }
+    .feat-text{
+        width: 100%;
+        padding: 0 28px;
+        margin: 0
+    }
+    .feat-title{
+        margin-top: 30px;
+        font-weight: 100;
+        line-height: 1.75;
+    }
+    .feat-description1{
+        margin-top: 48px;
+        padding: 0;
+        line-height: 1.75;
+    }
+    .feat-description2{
+        margin-top: 32px;
+        padding: 0;
+        line-height: 1.75;
+    }
+}
+
 
 /* SUBSCRIPTION */
 .sub{
@@ -182,6 +308,7 @@ header{
     width: 718px;
     padding-top: 49px;
     margin: 0 auto;
+    line-height: 1.75;
 }
 
 .sub-contents{
@@ -190,8 +317,29 @@ header{
     margin-top: 61px;
 }
 
+.sub-link{
+    display: block;
+    text-decoration: none;
+    color: #454545;
+}
+
+/* トランジションの時間はホバーじゃなくてこっちに書く */
 .sub-card{
     border: solid 4px #c9e23f;
+    box-shadow: 0px 2px 20px rgba(0, 0, 0, .2);
+    transition: all 0.3s ease-in;
+}
+
+/* ホバー時の動き（トランスフォーム） */
+.sub-card:hover{
+    transform: translateY(-5px);
+    box-shadow: 0px 6px 20px rgba(0, 0, 0, .25);
+}
+
+/* ホバーと同時にボタンに色をつける */
+.sub-link:hover .sub-btn{
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(201,226,63,1) 0%, rgba(71,227,220,1) 100%);
 }
 
 .sub-text{
@@ -225,8 +373,110 @@ header{
 .sub-description{
     margin-top: 38px;
     font-size: 14px;
+    margin-bottom: 23px;
 }
 
 .sub-btn{
-    margin-top: 23px;
+    width: 296px;
+    margin: 0 auto;
+    background-color: #eee;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 50px;
+    margin-bottom: 20px;
+}
+
+@media(max-width:768px){
+    .sub{
+        margin-top: 109px;
+    }
+    /* ここを他にも活かす */
+    .sub-title{
+        width: 100%;
+        padding: 0 27px;
+        margin-top: 18px;
+    }
+    .sub-contents{
+        display: block;
+        margin: 40px 10px 0;
+    }
+    .sub-visual{
+        width: 100%;
+    }
+    .sub-card{
+        margin-bottom: 24px;
+    }
+    .sub-cardtitle{
+        margin-top: 24px;
+    }
+    .sub-price{
+        margin-top: 19px;
+    }
+    .sub-description{
+        font-size: 16px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    .sub-btn{
+        width: 93%;
+        font-size: 16px;
+        font-weight: 100;
+        margin: 0 12px 12px 12px;
+    }
+}
+
+
+/* ITEMS */
+.items{
+    margin-top: 124px;
+}
+
+/* flexboxを勝手に折り返して欲しい時の対処法 */
+.items-list{
+    margin-top: 72px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* flex-wrap: wrap;で１行目と２行目の間に
+変な隙間ができた時の対処法 */
+.items-photo{
+    display: block;
+    transition: opacity .3s ease-in;
+}
+
+/* ホバーで画像を半透明にしたい時（画像にかける） */
+.items-photo:hover{
+    opacity: 0.8;
+}
+
+@media(max-width:768px){
+    .items{
+        margin-top: 98px;
+    }
+    .items-list{
+        width: 100%;
+        margin: 0;
+        padding: 40px 12px 0 12px;
+    }
+    .items-photo{
+        width: 117px;
+        /* width:33% */
+    }
+}
+
+/* コピーライト */
+.copyright{
+    padding: 460px 0 56px 0;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+@media(max-width:768px){
+    .copyright{
+        padding: 81px 0 157px 0;
+        font-size: 12.8px;
+    }
 }
