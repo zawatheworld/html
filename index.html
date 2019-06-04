@@ -2,6 +2,7 @@
 <html lang="ja">
 
 
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,25 +15,32 @@
 </head>
 
 
+
 <body>
 
-    <!-- ここからラッパー -->
+    <!-- ラッパー -->
     <div class="wrapper">
 
         <!-- ロゴの部分（ヘッダー） -->
-        <header>
-            <h1>
+        <header class="top">
+            <h1 class="site-tytle">
                 <a href=""><img class="header-img" src="assets/img/logo.svg" alt="ロゴ"></a>
             </h1>
+
             <!-- スマホ用ハンバーガーボタン -->
             <a class="menu-trigger" href="#"><img src="assets/img/menu.svg"></a>
+            <!-- /スマホ用ハンバーガーボタン -->
+
         </header>
+        <!-- /ロゴの部分（ヘッダー） -->
+
 
         <!-- トップの画像 -->
         <div class="main-visual">
             <img class="main-visual-img" src="assets/img/mainimage1.png" alt="トップ画像">
             <img class="copy" src="assets/img/catchcopy.png" alt="キャッチコピー">
         </div>
+        <!-- /トップの画像 -->
 
         <!-- ナビゲーション -->
         <div class="global-nav">
@@ -47,6 +55,8 @@
                 </ul>
             </nav>
         </div>
+        <!-- /ナビゲーション -->
+
 
         <!-- メイン -->
         <main>
@@ -77,6 +87,7 @@
                     </ul>
                 </div>
             </section>
+            <!-- /ニュース -->
 
             <!-- FEATURES -->
             <section class="feat">
@@ -92,6 +103,7 @@
                     </div>
                 </div>
             </section>
+            <!-- /FEATURES -->
 
             <!-- SUBSCRIPTION -->
             <section class="sub">
@@ -135,6 +147,7 @@
                     </li>
                 </ul>
             </section>
+            <!-- /SUBSCRIPTION -->
 
             <!-- ITEMS -->
             <section class="items">
@@ -180,30 +193,37 @@
                     </li>
                 </ul>
             </section>
+            <!-- /ITEMS -->
 
             <!-- コピーライト -->
             <div class="copyright">
                 <small>COPYRIGHT TAKAOSAN ALL RIGHTS RESERVED.</small>
             </div>
+            <!-- /コピーライト -->
 
         </main>
+        <!-- メイン -->
+
+
     </div>
+
+
 
     <!-- ハンバーガーメニューを開いた画面 -->
     <script>
         $(function(){
             $('.menu-trigger').on('click', function(){
             $('.global-nav-list').slideToggle();
-            $('html, body').toggleClass('hidden');
+            $('html, body').toggleClass('hidden');// 背景がスクロールしない設定
             return false;
         });
-        })
-        
+        })        
     </script>
-
+    <!-- /ハンバーガーメニューを開いた画面 -->
 
 </body>
-<!-- ここまでラッパー -->
+<!-- /ラッパー -->
+
 
 
 </html>

@@ -14,19 +14,24 @@ body{
     margin: 0 auto;
 }
 
-/* スクロールで背景とっまる */
+/* 背景がスクロールしない設定 */
 html.hidden,
 body.hidden{
     overflow: hidden;
     height: 100%;
 }
 
+
+/* スマホ版全体 */
 @media(max-width:768px){
     .wrapper{
         width: 100%;
         /* padding: 0 5%; */
     }
 }
+/* スマホ版全体 */
+/* /全体 */
+
 
 
 /* ヘッダー */
@@ -42,8 +47,11 @@ header{
     width: 208px;
 }
 
+
+/* スマホ版ヘッダー */
 @media(max-width:768px){
-    header {
+
+    .top {
         /* ヘッダーの横部分に余白をつけ、横幅を定義する */
         width: 100%;
         padding: 20px 16px;
@@ -59,12 +67,15 @@ header{
         /* ヘッダー部分が透明なので背景をつける */
         background-color: #fff;
     }
-    h1{
+
+    .site-tytle{
         /* display: inline; */
     }
+
     .header-img{
         width: 187px;
     }
+
     .menu-trigger{
         /* display: inline; */
         /* text-align: right; */
@@ -72,6 +83,9 @@ header{
         
     }
 }
+/* /スマホ版ヘッダー */
+/* /ヘッダー */
+
 
 
 /* トップの画像 */
@@ -87,6 +101,8 @@ header{
     width: 242px;
 }
 
+
+/* スマホ版トップの画像 */
 @media(max-width:768px){
     /*  下の要素のマージンでヘッダーを見えるようにする */
     .main-visual{
@@ -102,6 +118,9 @@ header{
         width: 120px;
     }
 }
+/* /スマホ版トップの画像 */
+/* /トップの画像 */
+
 
 
 /* ナビゲーション */
@@ -148,6 +167,8 @@ header{
     color: #9aaf24;
 }
 
+
+/* スマホ版ナビゲーション */
 @media(max-width:768px){
     .global-nav{
         margin: 0;
@@ -184,8 +205,11 @@ header{
     .global-nav-link:hover{
         background-color: rgba(255, 255, 255, .0);;
         color: #454545;
+    }
 }
-}
+/* /スマホ版ナビゲーション */
+/* /ナビゲーション */
+
 
 
 /* ニュース */
@@ -247,6 +271,8 @@ header{
     padding-left: 40px;
 }
 
+
+/* スマホ版ニュース */
 @media(max-width:768px){
     .news{
         margin: 42px 5% 0 5%;
@@ -269,6 +295,9 @@ header{
         line-height: 1.5;
     }
 }
+/* /スマホ版ニュース */
+/* /ニュース */
+
 
 
 /* FEATURES */
@@ -307,6 +336,8 @@ header{
     padding-bottom: 25px;
 }
 
+
+/* スマホ版FEATURES */
 @media(max-width:768px){
     .feat{
         margin: 43px 5% 0 5%;
@@ -338,6 +369,9 @@ header{
         line-height: 1.75;
     }
 }
+/* /スマホ版FEATURES */
+/* /FEATURES */
+
 
 
 /* SUBSCRIPTION */
@@ -427,6 +461,8 @@ header{
     margin-bottom: 20px;
 }
 
+
+/* スマホ版SUBSCRIPTION */
 @media(max-width:768px){
     .sub{
         margin: 109px 5% 0 5%;
@@ -466,11 +502,15 @@ header{
     }
     .sub-link:hover .sub-btn{
         background: #eee;
+    }
     /* ホバー時の動き（トランスフォーム） */
     .sub-card:hover{
         transform: none;
     }
 }
+/* /スマホ版SUBSCRIPTION */
+/* /SUBSCRIPTION */
+
 
 
 /* ITEMS */
@@ -497,6 +537,8 @@ header{
     opacity: 0.8;
 }
 
+
+/* スマホ版ITEMS */
 @media(max-width:768px){
     .items{
         margin-top: 98px;
@@ -519,6 +561,10 @@ header{
         opacity: none;
     }
 }
+/* /スマホ版ITEMS */
+/* /ITEMS */
+
+
 
 /* コピーライト */
 .copyright{
@@ -529,9 +575,13 @@ header{
     font-weight: 600;
 }
 
+
+/* スマホ版コピーライト */
 @media(max-width:768px){
     .copyright{
         padding: 81px 0 157px 0;
         font-size: 12.8px;
     }
 }
+/* /スマホ版コピーライト */
+/* コピーライト */
