@@ -10,7 +10,7 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat:500,600,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/reset.css">
     <link rel="stylesheet" href="assets/css/style.css">
-    <script src="assets/js/jqery-3.4.1.min.js" href=""></script>
+    <script src="assets/js/jquery-3.4.1.min.js"></script>
 </head>
 
 
@@ -25,7 +25,7 @@
                 <a href=""><img class="header-img" src="assets/img/logo.svg" alt="ロゴ"></a>
             </h1>
             <!-- スマホ用ハンバーガーボタン -->
-            <a class="menu-trigger" href=""><img src="assets/img/menu.svg"></a>
+            <a class="menu-trigger" href="#"><img src="assets/img/menu.svg"></a>
         </header>
 
         <!-- トップの画像 -->
@@ -191,11 +191,14 @@
 
     <!-- ハンバーガーメニューを開いた画面 -->
     <script>
-        $('.menu-trigger').on('click', function(){
+        $(function(){
+            $('.menu-trigger').on('click', function(){
             $('.global-nav-list').slideToggle();
             $('html, body').toggleClass('hidden');
             return false;
         });
+        })
+        
     </script>
 
 

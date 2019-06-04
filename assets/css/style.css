@@ -143,16 +143,40 @@ header{
 
 @media(max-width:768px){
     .global-nav{
-        display: none;
+        margin: 0;
     }
     /* ハンバーガーを開いた時に出てくる部分 */
     .global-nav-list{
         width: 100%;
         position: fixed;
+        top: 74px;
         height: 100vh;
         background-color: rgba(255, 255, 255, .95);
         z-index: 1;
+        display: none;
     }
+    .global-nav-item{
+        width: 100%;
+        border-left: none;
+        border-top: solid 1px #e4e4e4;
+        padding: 17px 0;
+    }
+    .global-nav-item:last-child{
+        border-right: none;
+        border-bottom: solid 1px #e4e4e4;
+    }
+    .global-nav-item:first-child a{
+        color: #454545;
+    }
+    .global-nav-link{
+        transition: none;
+        font-weight: 600;
+        line-height: 46px;
+    }
+    .global-nav-link:hover{
+        background-color: rgba(255, 255, 255, .0);;
+        color: #454545;
+}
 }
 
 
@@ -164,7 +188,7 @@ header{
 }
 
 .news-area{
-    margin-top: 62px;
+    margin-top: 56px;
 }
 
 .contents-title-box{
@@ -217,7 +241,7 @@ header{
 
 @media(max-width:768px){
     .news{
-        margin: 56px 11px 0 11px;
+        margin: 42px 5% 0 5%;
     }
     .news-list{
         width: 100%;
@@ -277,7 +301,7 @@ header{
 
 @media(max-width:768px){
     .feat{
-        margin-top: 43px;
+        margin: 43px 5% 0 5%;
     }
     .feat-box{
         margin-top: 44px;
@@ -285,12 +309,10 @@ header{
     }
     .feat-visual{
         width: 100%;
-        padding: 0 28px;
     }
     .feat-text{
         width: 100%;
-        padding: 0 28px;
-        margin: 0
+        margin: 0;
     }
     .feat-title{
         margin-top: 30px;
@@ -399,17 +421,17 @@ header{
 
 @media(max-width:768px){
     .sub{
-        margin-top: 109px;
+        margin: 109px 5% 0 5%;
     }
     /* ここを他にも活かす */
     .sub-title{
         width: 100%;
-        padding: 0 27px;
+        padding: 0;
         margin-top: 18px;
     }
     .sub-contents{
         display: block;
-        margin: 40px 10px 0;
+        margin: 40px 0;
     }
     .sub-visual{
         width: 100%;
@@ -432,7 +454,13 @@ header{
         width: 93%;
         font-size: 16px;
         font-weight: 100;
-        margin: 0 12px 12px 12px;
+        margin: 0 5%px 5%px 5%px;
+        background: rgb(2,0,36);
+        background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(201,226,63,1) 0%, rgba(71,227,220,1) 100%);
+    }
+    /* ホバー時の動き（トランスフォーム） */
+    .sub-card:hover{
+        transform: none;
     }
 }
 
@@ -468,11 +496,13 @@ header{
     .items-list{
         width: 100%;
         margin: 0;
-        padding: 40px 12px 0 12px;
+        padding: 40px 5% 0 5%;
     }
     .items-photo{
-        width: 117px;
-        /* width:33% */
+        width: 100%;
+    }
+    .items-visual{
+        width:33.3333%;
     }
 }
 
