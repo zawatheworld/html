@@ -37,17 +37,19 @@ header{
 
 @media(max-width:768px){
     header {
+        /* ヘッダーの横部分に余白をつけ、横幅を定義する */
         width: 100%;
         padding: 20px 16px;
-
+        /* ヘッダーの要素を等間隔で配置する */
         display: flex;
         justify-content: space-between;
-
+        /* 全てをブロック要素にし、隣に回り込ませる */
         position: fixed;
+        /* 下の要素を伸ばしてしまい上に隙間が空くので、隙間を消す */
         top: 0;
         left: 0;
         z-index: 2;
-
+        /* ヘッダー部分が透明なので背景をつける */
         background-color: #fff;
     }
     h1{
@@ -79,8 +81,9 @@ header{
 }
 
 @media(max-width:768px){
+    /*  下の要素のマージンでヘッダーを見えるようにする */
     .main-visual{
-        margin: 100px 0 0;
+        margin: 74px 0 0;
     }
     .main-visual-img{
         width: 100%;
@@ -141,6 +144,14 @@ header{
 @media(max-width:768px){
     .global-nav{
         display: none;
+    }
+    /* ハンバーガーを開いた時に出てくる部分 */
+    .global-nav-list{
+        width: 100%;
+        position: fixed;
+        height: 100vh;
+        background-color: rgba(255, 255, 255, .95);
+        z-index: 1;
     }
 }
 
